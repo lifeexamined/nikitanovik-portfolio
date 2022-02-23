@@ -39,6 +39,22 @@
     color: white;
   }
 
+  .icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+  }
+
+  .icon-wrapper > a {
+    margin: 12px 12px;
+  }
+
+  .icon-wrapper > a > i {
+    color: white;  
+  }
+
   .subscribe-title {
     margin-top:0;
     margin-bottom:40px;
