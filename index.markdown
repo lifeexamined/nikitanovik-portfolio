@@ -37,7 +37,7 @@ title: Home
 				    <h2 class="call-to-action-heading">Website Design</h2>
 				    <p class="call-to-action-text">One of the largest lines of my work is website design. Full design starting from UX research, competitive research to fully functional prototypes. I create brand guidelines from scratch. And make sure that every website looks good across all devices.</p>
                 <div class="full-width flex-row justify-start">
-                    <a href="https://medium.com/@nikita.a.novik/aeroaquaponic-a-ux-case-study-f4706eddd626" target="_blank"><button class="call-to-action-button">Read Case Study</button></a>
+                    <a href="https://nikitanovik.notion.site/Website-Design-8ad29485efe94932a2b99358bf3393dd" target="_blank"><button class="call-to-action-button">Read Case Study</button></a>
                 </div>
             </div>
 		</div>
@@ -55,7 +55,7 @@ title: Home
 				    <h2 class="call-to-action-heading">Mobile Design</h2>
 				    <p class="call-to-action-text">Every design I create is utilizing the mobile-first approach. I make sure that my designs look good on both iOS and Android devices. I design with the best design principles in mind to ensure the quality of the final product.</p>
                 <div class="full-width flex-row justify-start">
-                    <a href="https://medium.com/design-bootcamp/schmetterling-music-video-radio-web-app-a-ux-case-study-5e543f520b65" target="_blank"><button class="call-to-action-button">Read Case Study</button></a>
+                    <a href="https://nikitanovik.notion.site/Mobile-Design-79fffb8b1fdc4a16973137705dce3e04" target="_blank"><button class="call-to-action-button">Read Case Study</button></a>
                 </div>
             </div>
 		</div>
@@ -75,7 +75,7 @@ title: Home
 				    <h2 class="call-to-action-heading">App Design</h2>
 				    <p class="call-to-action-text">Product usability is my primary area of interest. That's why I give special treatment to app design. I offer iterative design based on user research that ensures that the app you get is both useful and user-friendly.</p>
                 <div class="full-width flex-row justify-start">
-                    <a href="https://medium.com/design-bootcamp/schmetterling-music-video-radio-web-app-a-ux-case-study-5e543f520b65" target="_blank"><button class="call-to-action-button">Read Case Study</button></a>
+                    <a href="https://nikitanovik.notion.site/App-Design-a57690c204a44bad9e9a494deb71ffd9" target="_blank"><button class="call-to-action-button">Read Case Study</button></a>
                 </div>
             </div>
 		</div>
