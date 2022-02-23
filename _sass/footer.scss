@@ -29,15 +29,30 @@
   }
   
   .footer-column-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 469px;
-    padding: 22px;
+    padding: 40px 22px;
     border: solid 2px white;
     color: white;
+  }
+
+  .subscribe-title {
+    margin-top:0;
+    margin-bottom:40px;
   }
   
   .subscribe-email {
     width: 100%;
     height: 28px;
+  }
+
+  .email {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
   }
   
   .subscribe-button {
@@ -105,9 +120,14 @@
     
     .footer-column-four {
       width: 90%;
-      padding: 22px;
-      border: solid 2px white;
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 40px 22px;
+      border: solid 2px white;
+
     }
     
     .subscribe-email {
