@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.nav-email > a {
+	text-decoration: underline !important;
+	text-transform: lowercase;
+	// margin-top: 61px;
+}
+
 .main-navigation {
 	width: 60%;
 }
