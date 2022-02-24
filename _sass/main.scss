@@ -12,8 +12,8 @@
 // - Call to Action
 //   -
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /** Body */
 body {
@@ -21,14 +21,18 @@ body {
     padding: 0;
 }
 
+main {
+  margin-bottom: 72px;
+}
+
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 700; font-family: 'Lato', sans-serif; text-transform: uppercase;}
+h1, h2, h3, h4, h5, h6 { font-weight: 700; font-family: 'Libre Baskerville', serif;}
 
 h1 { font-size: 61px;}
 h2 { font-size: 48.83px;}
 
 /** Body Copy */
-p { font-weight: 400; font-family: 'Open Sans', sans-serif; font-size: 18px; }
+p { font-weight: 400; font-family: 'Muli', sans-serif; font-size: 18px; }
 
 /** Lists */
 ul {
@@ -38,6 +42,15 @@ ul {
 li {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+/** Links */
+a {
+  text-decoration: none;
+}
+
+ul > li > a {
+  color: white;
 }
 
 /** Buttons */
@@ -58,6 +71,7 @@ button {
     text-transform: uppercase;
     // background-color: #000;
     color: black;
+    background-color: transparent;
 }
 
 button:hover {
@@ -80,6 +94,10 @@ button:hover {
   // background-color: #9999999;
 }
 
+.five-spacer {
+  height: 16px;
+  // background-color: #9999999;
+}
 /** Flex Settings */
 .flex-row {
     display: flex;
@@ -109,6 +127,20 @@ button:hover {
 }
 
 /** Call to Action */
+.primary-call-to-action-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-action-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  padding: 0% 5%;
+}
+
 .primary-call-to-action {
   display: flex;
   flex-direction: row;
@@ -130,11 +162,23 @@ button:hover {
   padding: 40px 0px;
 }
 
+.black {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+button.black:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
 .hero-call-to-action-container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  max-width: 1400px;
+  height: calc(100vh - 56px);
+  // max-width: 1400px;
 }
 
 .call-to-action-container {
@@ -144,7 +188,6 @@ button:hover {
   max-width: 1400px;
   border: solid 2px gray;
 }
-
 
 .call-to-action-img-wrapper {
   display: flex;
@@ -179,9 +222,10 @@ button:hover {
 }
 
 .call-to-action-image {
-  background-image: url("http://steustace.com/wp-content/uploads/2021/02/steustace-headerimage-cropped-3.jpeg");
+ 
   background-origin: content-box;
   background-position: center;
+  background-size: cover;
   margin:0;
   width: 50%;
   z-index: 2;
@@ -198,3 +242,195 @@ button:hover {
 //   color: black;
 // }
 
+#image-01 {
+  background-image: url("https://orthodoxbrotherhood-steustace.github.io/obse-jekyll//assets/images/steustace.jpeg");
+}
+
+#image-02 {
+  background-image: url("https://orthodoxbrotherhood-steustace.github.io/obse-jekyll//assets/images/steustace.jpeg");
+}
+
+#image-03 {
+  background-image: url("https://orthodoxbrotherhood-steustace.github.io/obse-jekyll//assets/images/steustace.jpeg");
+}
+
+/** Mobile View */
+
+@media only screen and (max-width: 600px) { 
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.call-to-action-container {
+  display: flex;
+  flex-direction: row;
+  // height: 100vh;
+  max-width: 1400px;
+  border: solid 2px gray;
+}
+
+button {
+
+  padding: 12px 40px;
+  flex-grow: 0;
+  margin: 0;
+  width: 100%;
+  border: solid 2px black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+   font-style: normal;
+  line-height: 1.88;
+  letter-spacing: 1.28px;
+  text-align: center;
+  text-transform: uppercase;
+  // background-color: #000;
+  color: black;
+}
+
+button:hover {
+background-color: black;
+color: white;
+}
+
+/** Call to Action */
+
+.call-to-action-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  padding: 0% 5%;
+}
+
+.primary-call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.custom-call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 24px;
+}
+
+.hero-call-to-action-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 600px;
+}
+
+.call-to-action-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+  // max-width: 600px;
+  border: solid 2px gray;
+}
+
+.reverse {
+  flex-direction: column !important;
+}
+
+.call-to-action-img-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  // width: 100%;
+  // height: 25px;
+}
+
+.call-to-action-img {
+  max-width: 75%
+}
+
+.call-to-action-textbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // padding: 12px 0px;
+  padding: 0;
+}
+
+.call-to-action-textbox {
+    margin: 24px 24px;
+  }
+
+.call-to-action-heading {
+  margin: 0 2px 16px 0;
+  line-height: 0.98;
+  letter-spacing: 3.91px;
+  text-align: left;
+//   color: #fff;
+}
+
+.call-to-action-text {
+  margin: 16px 4px 20px 0;
+  line-height: 1.67;
+  letter-spacing: 1.44px;
+  text-align: left;
+//   color: #fff;
+}
+
+.call-to-action-image {
+  background-image: url("http://steustace.com/wp-content/uploads/2021/02/steustace-headerimage-cropped-3.jpeg");
+  background-origin: content-box;
+  background-position: center;
+  margin:0;
+  // width: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.primary-call-to-action-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.primary-call-to-action-button-wrapper > a {
+  width: 40%;
+  margin: 4px;
+}
+
+
+.primary-call-to-action-button {
+  width: 100%;
+
+  padding: 12px 0px;
+  background-color: transparent;
+
+}
+
+.primary-call-to-action-button {
+  width: 100%;
+  margin: 4px;
+  padding: 12px 0px;
+  background-color: transparent;
+
+}
+
+.call-to-action-button {
+
+    background-color: transparent;
+
+}
+
+}
